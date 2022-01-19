@@ -12,12 +12,12 @@ class Klarna
     /**
      * @var Client
      */
-    protected Client $client;
+    protected $client;
 
     /**
      * @param Config $config
      */
-    public function __construct(protected Config $config)
+    public function __construct(Config $config)
     {
         $this->client = new Client(['base_uri' => $this->config->baseUrl]);
     }
