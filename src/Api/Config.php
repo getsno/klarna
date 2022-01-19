@@ -13,7 +13,7 @@ class Config
     public $user;
     public $password;
 
-    public function __construct(string $user, string $password, $mode = 'dev')
+    public function __construct(string $user, string $password, string $mode = 'dev')
     {
         $this->user = $user;
         $this->password = $password;

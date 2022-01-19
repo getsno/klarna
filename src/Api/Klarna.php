@@ -13,12 +13,14 @@ class Klarna
      * @var Client
      */
     protected $client;
+    public $config;
 
     /**
      * @param Config $config
      */
     public function __construct(Config $config)
     {
+        $this->config = $config;
         $this->client = new Client(['base_uri' => $this->config->baseUrl]);
     }
 
@@ -261,6 +263,7 @@ class Klarna
 
     /**
      * @see https://developers.klarna.com/api/#order-management-api-set-new-order-amount-and-order-lines
+     *
      * @param string $order
      * @param array $body
      *
