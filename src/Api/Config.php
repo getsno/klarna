@@ -9,9 +9,9 @@ class Config
         'prod' => 'https://api.klarna.com/'
     ];
 
-    public string $baseUrl;
-    public string $user;
-    public string $password;
+    public $baseUrl;
+    public $user;
+    public $password;
 
     public function __construct(string $user, string $password, $mode = 'dev')
     {
