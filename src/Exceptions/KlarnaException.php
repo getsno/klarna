@@ -3,7 +3,6 @@
 namespace Gets\Klarna\Exceptions;
 
 use GuzzleHttp\Exception\GuzzleException;
-use GuzzleHttp\Utils;
 
 class KlarnaException extends \Exception
 {
@@ -12,7 +11,7 @@ class KlarnaException extends \Exception
         if ($previousException->getCode() === 401) {
             return new KlarnaInvalidConfig("Invalid klarna credentials", 0, $previousException);
         }
-        $responseParsed = Utils::jsonDecode($responseContent);
+        $responseParsed = json_decode($responseContent);
         if (is_array($responseParsed) && !empty($responseParsed[0])) {
             $error = $responseParsed[0];
             switch ($error->errorCode) {
@@ -41,5 +40,4 @@ class KlarnaException extends \Exception
 
         return new self($responseContent, 0, $previousException);
     }
-
 }
