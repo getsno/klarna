@@ -274,4 +274,17 @@ class Klarna
     {
         return $this->patchRequest("/ordermanagement/v1/orders/$order/authorization", $body);
     }
+
+    /**
+     * @see https://developers.klarna.com/api/#order-management-api-acknowledge-order
+     * @param string $order
+     *
+     * @return array
+     * @throws KlarnaException
+     * @throws KlarnaInvalidConfig
+     */
+    public function acknowledge(string $order): array
+    {
+        return $this->postRequest("/ordermanagement/v1/orders/$order/acknowledge", []);
+    }
 }
