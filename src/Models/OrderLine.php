@@ -2,8 +2,12 @@
 
 namespace Gets\Klarna\Models;
 
+use Fillable;
+
 class OrderLine
 {
+    use Fillable;
+
     public const TYPE_PHYSICAL = 'physical';
     public const TYPE_DISCOUNT = 'discount';
     public const TYPE_SHIPPING_FEE = 'shipping_fee';
@@ -28,11 +32,7 @@ class OrderLine
 
     public function __construct(array $orderLine)
     {
-        foreach ($orderLine as $prop => $value) {
-            if (property_exists($this, $prop)) {
-                $this->$prop = $value;
-            }
-        }
+        $this->fillFromArray($orderLine);
     }
 
     public function toArray(): array
