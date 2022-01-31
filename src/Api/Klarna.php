@@ -195,14 +195,15 @@ class Klarna
      *
      * @param string $order
      * @param string $capture
+     * @param array $body
      *
      * @return array
      * @throws KlarnaException
      * @throws KlarnaInvalidConfig
      */
-    public function addShippingInfoToCapture(string $order, string $capture): array
+    public function addShippingInfoToCapture(string $order, string $capture, array $body): array
     {
-        return $this->postRequest("/ordermanagement/v1/orders/$order/captures/$capture/shipping-info", []);
+        return $this->postRequest("/ordermanagement/v1/orders/$order/captures/$capture/shipping-info", $body);
     }
 
     /**
