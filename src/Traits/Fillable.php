@@ -1,5 +1,9 @@
 <?php
 
+namespace Gets\Klarna\Traits;
+
+use InvalidArgumentException;
+
 /**
  * Fill the class properties by array/object
  */

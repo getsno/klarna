@@ -2,7 +2,7 @@
 
 namespace Gets\Klarna\Models;
 
-use Fillable;
+use Gets\Klarna\Traits\Fillable;
 
 class ShippingInfo
 {
@@ -23,7 +23,6 @@ class ShippingInfo
     public $shipping_method;
     public $tracking_number;
     public $tracking_uri;
-
     public $return_shipping_company;
     public $return_tracking_number;
     public $return_tracking_uri;

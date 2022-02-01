@@ -2,7 +2,7 @@
 
 namespace Gets\Klarna\Models;
 
-use Fillable;
+use Gets\Klarna\Traits\Fillable;
 
 class OrderLine
 {

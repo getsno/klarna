@@ -278,6 +278,7 @@ class Klarna
 
     /**
      * @see https://developers.klarna.com/api/#order-management-api-acknowledge-order
+     *
      * @param string $order
      *
      * @return array
@@ -287,5 +288,19 @@ class Klarna
     public function acknowledge(string $order): array
     {
         return $this->postRequest("/ordermanagement/v1/orders/$order/acknowledge", []);
+    }
+
+    /**
+     * @see https://developers.klarna.com/api/#order-management-api-update-customer-addresses
+     *
+     * @param string $order
+     * @param array $body
+     *
+     * @return array
+     * @throws KlarnaException
+     */
+    public function updateCustomerAddress(string $order, array $body): array
+    {
+        return $this->patchRequest("/ordermanagement/v1/orders/$order/customer-details", $body);
     }
 }
