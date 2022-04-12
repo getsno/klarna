@@ -1,6 +1,6 @@
 {
     "name": "getsno/klarna",
-    "description": "Klarna api",
+    "description": "Klarna API client",
     "type": "library",
     "require": {
         "php": ">=7.3",
@@ -10,7 +10,13 @@
     "authors": [
         {
             "name": "Alex",
-            "email": "alexandr.azartsev@gmail.com"
+            "email": "alexandr.azartsev@gmail.com",
+            "role": "Developer"
+        },
+        {
+            "name": "Anton Samofal",
+            "email": "devtosha@gmail.com",
+            "role": "Developer"
         }
     ],
     "autoload":  {
