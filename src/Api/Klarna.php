@@ -104,7 +104,7 @@ class Klarna
     }
 
     /**
-     * @see https://developers.klarna.com/api/#checkout-api-create-a-new-order Docs
+     * @see https://docs.klarna.com/api/#checkout-api-create-a-new-order Docs
      * @throws KlarnaException
      * @throws KlarnaInvalidConfig
      */
@@ -114,7 +114,7 @@ class Klarna
     }
 
     /**
-     * @see https://developers.klarna.com/api/#checkout-api-update-an-order Docs
+     * @see https://docs.klarna.com/api/#checkout-api-update-an-order Docs
      * @throws KlarnaException
      * @throws KlarnaInvalidConfig
      */
@@ -124,7 +124,7 @@ class Klarna
     }
 
     /**
-     * @see https://developers.klarna.com/api/#checkout-api-update-an-order Docs
+     * @see https://docs.klarna.com/api/#checkout-api-update-an-order Docs
      *
      * @param string $order
      *
@@ -137,7 +137,7 @@ class Klarna
     }
 
     /**
-     * @see https://developers.klarna.com/api/#order-management-api-get-order
+     * @see https://docs.klarna.com/api/#order-management-api-get-order
      *
      * @param string $order
      *
@@ -150,7 +150,7 @@ class Klarna
     }
 
     /**
-     * @see https://developers.klarna.com/api/#order-management-api-update-merchant-references Docs
+     * @see https://docs.klarna.com/api/#order-management-api-update-merchant-references Docs
      *
      * @param string $order
      * @param array $body
@@ -164,7 +164,7 @@ class Klarna
     }
 
     /**
-     * @see https://developers.klarna.com/api/#order-management-api-cancel-order Docs
+     * @see https://docs.klarna.com/api/#order-management-api-cancel-order Docs
      *
      * @param string $order
      *
@@ -178,7 +178,7 @@ class Klarna
     }
 
     /**
-     * @see https://developers.klarna.com/api/#order-management-api-cancel-order Docs
+     * @see https://docs.klarna.com/api/#order-management-api-cancel-order Docs
      *
      * @param string $order
      *
@@ -191,7 +191,7 @@ class Klarna
     }
 
     /**
-     * @see https://developers.klarna.com/api/#order-management-api-cancel-order Docs
+     * @see https://docs.klarna.com/api/#order-management-api-cancel-order Docs
      *
      * @param string $order
      * @param string $capture
@@ -207,7 +207,7 @@ class Klarna
     }
 
     /**
-     * @see https://developers.klarna.com/api/#order-management-api-create-capture Docs
+     * @see https://docs.klarna.com/api/#order-management-api-create-capture Docs
      *
      * @param string $order
      * @param array $body
@@ -222,7 +222,7 @@ class Klarna
     }
 
     /**
-     * @see https://developers.klarna.com/api/#order-management-api-create-capture Docs
+     * @see https://docs.klarna.com/api/#order-management-api-create-capture Docs
      *
      * @param string $order
      * @param string $capture
@@ -236,7 +236,7 @@ class Klarna
     }
 
     /**
-     * @see https://developers.klarna.com/api/#order-management-api-create-a-refund Docs
+     * @see https://docs.klarna.com/api/#order-management-api-create-a-refund Docs
      *
      * @param string $order
      * @param array $body
@@ -263,7 +263,7 @@ class Klarna
     }
 
     /**
-     * @see https://developers.klarna.com/api/#order-management-api-set-new-order-amount-and-order-lines
+     * @see https://docs.klarna.com/api/#order-management-api-set-new-order-amount-and-order-lines
      *
      * @param string $order
      * @param array $body
@@ -277,7 +277,7 @@ class Klarna
     }
 
     /**
-     * @see https://developers.klarna.com/api/#order-management-api-acknowledge-order
+     * @see https://docs.klarna.com/api/#order-management-api-acknowledge-order
      *
      * @param string $order
      *
@@ -291,7 +291,7 @@ class Klarna
     }
 
     /**
-     * @see https://developers.klarna.com/api/#order-management-api-update-customer-addresses
+     * @see https://docs.klarna.com/api/#order-management-api-update-customer-addresses
      *
      * @param string $order
      * @param array $body
