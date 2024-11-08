@@ -303,4 +303,17 @@ class Klarna
     {
         return $this->patchRequest("/ordermanagement/v1/orders/$order/customer-details", $body);
     }
+
+    /**
+     * @see https://docs.klarna.com/api/ordermanagement/#operation/releaseRemainingAuthorization
+     * 
+     * @param string $order
+     * 
+     * @return array
+     * @throws KlarnaException
+     */
+    public function releaseRemainingAuthorization(string $order): array
+    {
+        return $this->postRequest("/ordermanagement/v1/orders/$order/release-remaining-authorization", []);
+    }
 }
